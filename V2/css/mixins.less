@@ -1,0 +1,74 @@
+// Bootstrap Button Variant
+
+.button-variant(@color; @background; @border) {
+	color: @color;
+	background-color: @background;
+	border-color: @border;
+
+	&:hover,
+	&:focus,
+	&:active,
+	&.active,
+	.open .dropdown-toggle& {
+		color: #ffffff;
+		background-color: @brand-primary;
+        border-color: @brand-primary;
+	}
+	&:active,
+	&.active,
+	.open .dropdown-toggle& {
+		background-image: none;
+	}
+	&.disabled,
+	&[disabled],
+	fieldset[disabled] & {
+		&,
+		&:hover,
+		&:focus,
+		&:active,
+		&.active {
+			background-color: @background;
+			border-color: @border;
+		}
+	}
+
+	.badge {
+		color: @background;
+		background-color: @color;
+	}
+}
+
+.button-rad{
+    border-radius: 3px;
+}
+.btn-hover{
+    transition: background-color 0.5s ease;
+}
+
+// Background Features
+
+.background-cover() {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+// Font Selections
+
+.serif-font() {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.script-font() {
+	font-family: "Helvetica Neue", Helvetica, Arial, cursive;
+}
+
+.body-font() {
+	font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.heading-font() {
+	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	/*text-transform: uppercase;*/
+}
